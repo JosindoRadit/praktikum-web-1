@@ -3327,6 +3327,1116 @@ Gunakan elemen HTML <dd>untuk mendeskripsikan istilah dalam daftar deskripsi
 
 
 
+## 12. HTML Div
+
+
+
+Elemen <div>
+
+
+Elemen ini <div>secara default adalah elemen blok, artinya elemen ini mengambil semua lebar yang tersedia, dan dilengkapi dengan jeda baris sebelum dan sesudahnya.
+
+
+<div> sebagai wadah
+
+ 
+Elemen ini <div>sering digunakan untuk mengelompokkan bagian-bagian halaman web menjadi satu.
+
+```
+<!DOCTYPE html>
+<html>
+<style>
+div {
+  background-color: #FFF4A3;
+}
+</style>
+<body>
+
+<h1>HTML DIV Example</h1>
+
+<div>
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 13 million inhabitants.</p>
+</div>
+
+<p>The yellow background is added to demonstrate the footprint of the DIV element.</p>
+
+</body>
+</html>
+```
+
+![image](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/9861b2ce-f8c1-4959-9616-9b3b5654cde1)
+
+
+
+Ratakan tengah elemen <div>
+
+
+Jika Anda memiliki <div>elemen yang lebarnya tidak 100%, dan Anda ingin meratakannya di tengah, setel marginproperti CSS ke auto
+
+```
+<!DOCTYPE html>
+<html>
+<style>
+div {
+  width: 300px;
+  margin: auto;
+  background-color: #FFF4A3;
+}
+</style>
+<body>
+
+<h1>Center align a DIV element</h1>
+
+<div>
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 13 million inhabitants.</p>
+</div>
+
+</body>
+</html>
+```
+
+
+![d2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/dad34fbf-fb63-44af-a52d-a5488599c8c5)
+
+
+Beberapa elemen <div>
+
+
+Anda dapat memiliki banyak <div>container di halaman yang sama.
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Multiple DIV Elements</h1>
+
+<div style="background-color:#FFF4A3;">
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 13 million inhabitants.</p>
+</div>
+
+<div style="background-color:#FFC0C7;">
+  <h2>Oslo</h2>
+  <p>Oslo is the capital city of Norway.</p>
+  <p>Oslo has over 600.000 inhabitants.</p>
+</div>
+
+<div style="background-color:#D9EEE1;">
+  <h2>Rome</h2>
+  <p>Rome is the capital city of Italy.</p>
+  <p>Rome has almost 3 million inhabitants.</p>
+</div>
+
+<p>CSS styles are added to make it easier to separate the divs, and to make them more pretty:)</p>
+
+</body>
+</html>
+
+```
+
+
+![D3](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/20a2aef8-38b8-4104-8586-7b8a6f5565f1)
+
+
+Mengambang
+
+
+Properti CSS floatawalnya tidak dimaksudkan untuk menyelaraskan <div>elemen secara berdampingan, namun telah digunakan untuk tujuan ini selama bertahun-tahun.
+Properti CSS floatdigunakan untuk memposisikan dan memformat konten serta memungkinkan elemen melayang bersebelahan, bukan di atas satu sama lain.
+
+```
+<!DOCTYPE html>
+<html>
+<style>
+div.mycontainer {
+  width:100%;
+  overflow:auto;
+}
+div.mycontainer div {
+  width:33%;  
+  float:left;
+}
+</style>
+<body>
+
+<div class="mycontainer">
+
+  <div style="background-color:#FFF4A3;">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 13 million inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#FFC0C7;">
+    <h2>Oslo</h2>
+    <p>Oslo is the capital city of Norway.</p>
+    <p>Oslo has over 600.000 inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#D9EEE1;">
+    <h2>Rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+    <p>Rome has almost 3 million inhabitants.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+```
+
+
+
+![d4](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/11185f01-a087-4675-a265-19e9e6328c66)
+
+
+Blok sebaris
+
+
+Jika Anda mengubah properti <div>elemen displaydari blockmenjadi inline-block, <div>elemen tidak akan lagi menambahkan jeda baris sebelum dan sesudahnya, dan akan ditampilkan berdampingan, bukan di atas satu sama lain.
+
+
+
+```
+<!DOCTYPE html>
+<html>
+<style>
+div {
+  width:30%;  
+  display:inline-block;
+}
+</style>
+<body>
+
+<div style="background-color:#FFF4A3;">
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 13 million inhabitants.</p>
+</div>
+
+<div style="background-color:#FFC0C7;">
+  <h2>Oslo</h2>
+  <p>Oslo is the capital city of Norway.</p>
+  <p>Oslo has over 600.000 inhabitants.</p>
+</div>
+
+<div style="background-color:#D9EEE1;">
+  <h2>Rome</h2>
+  <p>Rome is the capital city of Italy.</p>
+  <p>Rome has almost 3 million inhabitants.</p>
+</div>
+
+</body>
+</html>
+
+
+```
+
+
+![d5](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/a095382b-6ff8-451d-badb-d3ea8b05c4f3)
+
+
+Melenturkan
+
+
+Modul Tata Letak CSS Flexbox diperkenalkan untuk memudahkan merancang struktur tata letak responsif yang fleksibel tanpa menggunakan float atau positioning.
+Agar metode fleksibel CSS berfungsi, kelilingi <div>elemen dengan <div>elemen lain dan berikan status sebagai wadah fleksibel.
+
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mycontainer {
+  display: flex;
+}
+.mycontainer > div {
+  width:33%;
+}
+</style>
+</head>
+<body>
+
+<h1>Flexbox Example</h1>
+
+<p>Align three DIV elements side by side.</p>
+
+<div class="mycontainer">
+
+  <div style="background-color:#FFF4A3;">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 13 million inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#FFC0C7;">
+    <h2>Oslo</h2>
+    <p>Oslo is the capital city of Norway.</p>
+    <p>Oslo has over 600.000 inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#D9EEE1;">
+    <h2>Rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+    <p>Rome has almost 3 million.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+```
+
+
+![d6](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/8816b57c-3497-473c-ace9-bedc1ca1ef82)
+
+
+jaringan
+
+
+Modul Tata Letak Grid CSS menawarkan sistem tata letak berbasis grid, dengan baris dan kolom, sehingga memudahkan mendesain halaman web tanpa harus menggunakan float dan positioning.
+Kedengarannya hampir sama dengan flex, namun memiliki kemampuan untuk menentukan lebih dari satu baris dan memposisikan setiap baris secara individual.
+Metode grid CSS mengharuskan Anda mengelilingi <div>elemen dengan <div>elemen lain dan memberikan status sebagai wadah grid, dan Anda harus menentukan lebar setiap kolom.
+
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Example</h1>
+
+<p>Align three DIV elements side by side.</p>
+
+<div class="grid-container">
+
+<div style="background-color:#FFF4A3;">
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 13 million inhabitants.</p>
+</div>
+
+<div style="background-color:#FFC0C7;">
+  <h2>Oslo</h2>
+  <p>Oslo is the capital city of Norway.</p>
+  <p>Oslo has over 600.000 inhabitants.</p>
+</div>
+
+<div style="background-color:#D9EEE1;">
+  <h2>Rome</h2>
+  <p>Rome is the capital city of Italy.</p>
+  <p>Rome has almost 3 million inhabitants.</p>
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
+```
+
+
+![d7](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/daf5c79b-afc0-405b-99bb-038daf2c14cc)
+
+
+## 13. Classes
+
+Menggunakan Atribut kelas
+
+
+Atribut ini classsering digunakan untuk menunjuk ke nama kelas dalam style sheet. Itu juga dapat digunakan oleh JavaScript untuk mengakses dan memanipulasi elemen dengan nama kelas tertentu.
+Pada contoh berikut kita memiliki tiga <div>elemen dengan classatribut bernilai "kota". Ketiga <div> elemen tersebut akan diberi gaya yang sama sesuai dengan .city definisi gaya di bagian kepala:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: pink;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+<h2>London</h2>
+<p>London is the capital of England.</p>
+</div> 
+
+<div class="city">
+<h2>Paris</h2>
+<p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+</div>
+
+</body>
+</html>
+
+
+```
+
+
+![c1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/211e5844-15c0-4b9b-a8d8-ab299d762010)
+
+
+Sintaks Untuk Kelas
+
+
+Untuk membuat kelas; tulis karakter titik (.), diikuti dengan nama kelas. Lalu, definisikan properti CSS di dalam kurung kurawal {}:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2>The class Attribute</h2>
+<p>Use CSS to style elements with the class name "city":</p>
+
+<h2 class="city">Cilacap</h2>
+<p>Cilacap is the capital of Jawa tengah.</p>
+
+<h2 class="city">motean</h2>
+<p>motean is the capital of Jawa jawa.</p>
+
+<h2 class="city">Purwokerto</h2>
+<p>purwokerto is the capital of Jawa suriname.</p>
+
+</body>
+</html>
+
+
+```
+
+
+![c2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/5867ac35-fa44-4351-b88f-0c5cc6e15579)
+
+Beberapa Kelas
+
+
+Elemen HTML dapat dimiliki lebih dari satu kelas.
+Untuk mendefinisikan beberapa kelas, pisahkan nama kelas dengan spasi, misalnya <div class="city main">. Elemen akan ditata sesuai dengan semua kelas yang ditentukan.
+Dalam contoh berikut, <h2>elemen pertama adalah milik kelas citydan juga milik mainkelas tersebut, dan akan mendapatkan gaya CSS dari kedua kelas: 
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+
+.main {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Multiple Classes</h2>
+<p>Here, all three h2 elements belongs to the "city" class. In addition, London also belongs to the "main" class, which center-aligns the text.</p>
+
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+
+</body>
+</html>
+
+```
+
+![c3](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/ec626ff4-c2a0-4a1b-807c-c88f39cb65c4)
+
+
+Elemen Berbeda Dapat Berbagi Kelas yang Sama
+
+
+Elemen HTML yang berbeda dapat menunjuk ke nama kelas yang sama.
+Dalam contoh berikut, keduanya <h2>menunjuk <p> ke kelas "kota" dan akan berbagi gaya yang sama:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+</style>
+</head>
+<body>
+
+<h2>Different Elements Can Share Same Class</h2>
+
+<p>Even if the two elements do not have the same tag name, they can both point to the same class, and get the same CSS styling:</p>
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France.</p>
+
+</body>
+</html>
+
+```
+
+
+![c4](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/ae93bd8c-90ad-4be1-b5a7-d504c335b150)
+
+
+
+Ringkasan Bab
+
+
+- Atribut HTML classmenentukan satu atau lebih nama kelas untuk suatu elemen
+- Kelas digunakan oleh CSS dan JavaScript untuk memilih dan mengakses elemen tertentu
+- Atribut ini classdapat digunakan pada elemen HTML apa pun
+- Nama kelas peka huruf besar-kecil
+- Elemen HTML yang berbeda dapat menunjuk ke nama kelas yang sama
+- JavaScript dapat mengakses elemen dengan nama kelas tertentu dengan getElementsByClassName() metode tersebut
+
+
+## 14. Id
+
+
+Menggunakan Atribut id
+
+
+Atribut idmenentukan id unik untuk elemen HTML. Nilai atribut id harus unik dalam dokumen HTML.
+Atribut iddigunakan untuk menunjuk ke deklarasi gaya tertentu dalam style sheet. Itu juga digunakan oleh JavaScript untuk mengakses dan memanipulasi elemen dengan id tertentu.
+Sintaks untuk id adalah: tulis karakter hash (#), diikuti dengan nama id. Lalu, definisikan properti CSS di dalam kurung kurawal {}.
+Dalam contoh berikut kita memiliki <h1>elemen yang menunjuk ke nama id "myHeader". Elemen ini <h1> akan ditata sesuai dengan #myHeader definisi gaya di bagian kepala:
+
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: red;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+</style>
+</head>
+<body>
+
+<h2>The id Attribute</h2>
+<p>Use CSS to style an element with the id "mykepala":</p>
+
+<h1 id="myHeader">My kepala</h1>
+
+</body>
+</html>
+
+
+```
+
+
+
+![id1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/23d69ff6-06f8-48ff-81f3-b5611c34962c)
+
+
+
+
+Perbedaan Antara Kelas dan ID
+
+
+Nama kelas dapat digunakan oleh beberapa elemen HTML, sedangkan nama id hanya boleh digunakan oleh satu elemen HTML dalam halaman:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: green;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+  background-color: brown;
+  color: white;
+  padding: 10px;
+} 
+</style>
+</head>
+<body>
+
+<h2>Difference Between Class and ID</h2>
+<p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+
+<!-- An element with a unique id -->
+<h1 id="myHeader">kucing</h1>
+
+<!-- Multiple elements with same class -->
+<h2 class="city">belanda</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+</body>
+</html>
+```
+
+![i1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/5d00018f-a65f-4e01-95d3-345f2f7dfc1e)
+
+
+
+Bookmark HTML dengan ID dan Tautan
+
+
+Bookmark HTML digunakan untuk memungkinkan pembaca melompat ke bagian tertentu dari halaman web.
+Bookmark dapat berguna jika halaman Anda sangat panjang.
+Untuk menggunakan bookmark, Anda harus membuatnya terlebih dahulu, lalu menambahkan link ke bookmark tersebut.
+Kemudian, ketika link tersebut diklik, halaman tersebut akan bergulir ke lokasi yang diberi bookmark.
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 17</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 18</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 19</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 20</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 21</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 22</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 23</h2>
+<p>This chapter explains ba bla bla</p>
+
+</body>
+</html>
+
+
+```
+
+
+![i2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/e48c44a3-b5f6-40cf-afb8-f0f11145f9b8)
+
+
+
+Menggunakan Atribut id dalam JavaScript
+
+
+Atribut idjuga dapat digunakan oleh JavaScript untuk melakukan beberapa tugas untuk elemen tertentu.
+JavaScript dapat mengakses elemen dengan id tertentu dengan getElementById()metode:
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Using The id Attribute in JavaScript</h2>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+
+</body>
+</html>
+
+
+```
+
+
+![it](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/b1b99fea-cb4f-47fc-8056-78b5d7b38910)
+
+
+
+Ringkasan Bab
+
+
+- Atribut iddigunakan untuk menentukan id unik untuk elemen HTML
+- Nilai atribut id harus unik dalam dokumen HTML
+- Atribut ini id digunakan oleh CSS dan JavaScript untuk menata/memilih elemen tertentu
+- Nilai atribut id peka huruf besar-kecil
+- Atribut ini id juga digunakan untuk membuat bookmark HTML
+- JavaScript dapat mengakses elemen dengan id tertentu dengan getElementById() metode ini
+
+
+
+## 15. HTML JavaScript
+
+The HTML <script> Tag
+
+
+The HTML <script> tag is used to define a client-side script (JavaScript).
+The <script> element either contains script statements, or it points to an external script file through the src attribute.
+Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+To select an HTML element, JavaScript most often uses the document.getElementById() method.
+This JavaScript example writes "Hello JavaScript!" into an HTML element with id="demo":
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Use JavaScript to Change Text</h2>
+<p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script> 
+
+</body>
+</html>
+```
+
+
+![j1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/bcb92a54-acac-4f37-9685-c0c754ac2499)
+
+
+A Taste of JavaScript
+
+
+Here are some examples of what JavaScript can do:
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+</body>
+</html>
+
+
+```
+
+
+
+![j2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/285cbe8a-faf6-4a79-8541-bd2d02dbf330)
+
+
+
+The HTML <noscript> Tag
+
+
+The HTML <noscript> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support scripts:
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+ 
+</body>
+</html>
+```
+
+
+![j3](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/172340fc-5ee3-401d-bc81-26ec73a38dbe)
+
+
+## CSS
+
+
+## 1. CSS Interduction
+
+
+Apa itu CSS?
+
+
+- CSS adalah singkatan dari Cascading Style Sheet
+- CSS menjelaskan bagaimana elemen HTML ditampilkan di layar, kertas, atau di media lain
+- CSS menghemat banyak pekerjaan. Itu dapat mengontrol tata letak beberapa halaman web sekaligus
+- Stylesheet eksternal disimpan dalam file CSS
+
+
+
+Mengapa Menggunakan CSS?
+
+
+CSS digunakan untuk menentukan gaya halaman web Anda, termasuk desain, tata letak, dan variasi tampilan untuk berbagai perangkat dan ukuran layar.
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: green;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Indonesia</h1>
+<p>Lolos semi final</p>
+
+</body>
+</html>
+
+
+
+```
+
+
+![i11](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/61b64141-f5dd-4b39-815b-e27239537799)
+
+
+
+
+CSS Memecahkan Masalah Besar
+
+
+HTML TIDAK PERNAH dimaksudkan untuk memuat tag untuk memformat halaman web!
+HTML dibuat untuk mendeskripsikan konten halaman web, seperti:
+<h1>Ini adalah judul</h1>
+<p>Ini adalah sebuah paragraf.</p>
+Ketika tag seperti <font>, dan atribut warna ditambahkan ke spesifikasi HTML 3.2, hal ini menimbulkan mimpi buruk bagi pengembang web. Pengembangan situs web besar, di mana font dan informasi warna ditambahkan ke setiap halaman, menjadi proses yang panjang dan mahal.
+Untuk mengatasi masalah ini, World Wide Web Consortium (W3C) menciptakan CSS.
+CSS menghapus pemformatan gaya dari halaman HTML!
+
+
+## 2. Syntaks
+
+
+Sintaks CSS
+
+
+pemilih css
+
+
+
+Pemilih menunjuk ke elemen HTML yang ingin Anda gaya.
+Blok deklarasi berisi satu atau lebih deklarasi yang dipisahkan oleh titik koma.
+Setiap deklarasi menyertakan nama properti CSS dan nilainya, dipisahkan oleh titik dua.
+Beberapa deklarasi CSS dipisahkan dengan titik koma, dan blok deklarasi diapit oleh kurung kurawal.
+
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  color: red;
+  text-align: center;
+} 
+</style>
+</head>
+<body>
+
+<p>Hello World!</p>
+<p>These paragraphs are styled with CSS.</p>
+
+</body>
+</html>
+
+```
+
+
+![s1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/ee19d6d2-173c-4d9a-9022-f3b53f94fbc9)
+
+
+## 3. CSS Selector
+
+
+Pemilih CSS
+
+
+Pemilih CSS digunakan untuk "menemukan" (atau memilih) elemen HTML yang ingin Anda gaya.
+
+
+Kita dapat membagi pemilih CSS menjadi lima kategori:
+
+
+- Selector sederhana (pilih elemen berdasarkan nama, id, kelas)
+- Penyeleksi kombinator (memilih elemen berdasarkan hubungan tertentu di antara elemen tersebut)
+- Selector kelas semu (memilih elemen berdasarkan keadaan tertentu)
+- Pemilih elemen semu (memilih dan memberi gaya pada bagian elemen)
+- Pemilih atribut (memilih elemen berdasarkan atribut atau nilai atribut)
+
+
+Pemilih elemen CSS
+Pemilih elemen memilih elemen HTML berdasarkan nama elemen.
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  text-align: lift;
+  color: brown;
+} 
+</style>
+</head>
+<body>
+
+<p>indonesia menang</p>
+<p id="para1">Me too!</p>
+<p>And me!</p>
+
+</body>
+</html>
+
+```
+
+![se1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/132f48df-2c4d-4f88-8390-9f1cc743e71c)
+
+
+Pemilih ID CSS
+
+
+Pemilih id menggunakan atribut id dari elemen HTML untuk memilih elemen tertentu.
+Id suatu elemen bersifat unik dalam suatu halaman, sehingga pemilih id digunakan untuk memilih satu elemen unik!
+Untuk memilih elemen dengan id tertentu, tulis karakter hash (#), diikuti dengan id elemen tersebut.
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#para1 {
+  text-align: center;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<p id="para1">indo menang!</p>
+<p>This paragraph is not affected by the style.</p>
+
+</body>
+</html>
+
+
+
+```
+
+
+Pemilih kelas CSS
+
+Pemilih kelas memilih elemen HTML dengan atribut kelas tertentu.
+Untuk memilih elemen dengan kelas tertentu, tuliskan karakter titik (.), diikuti dengan nama kelas.
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.center {
+  text-align: center;
+  color: red;
+}
+
+p.large {
+  font-size: 300%;
+}
+</style>
+</head>
+<body>
+
+<h1 class="center">trhtr</h1>
+<p class="center">Thjthr</p>
+<p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p> 
+
+</body>
+</html>
+
+
+
+```
+
+
+
+![se3](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/97cbf91d-1cb2-4033-b54e-b3890bddd201)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
