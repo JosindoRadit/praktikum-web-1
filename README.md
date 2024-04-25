@@ -1,4 +1,5 @@
 # Praktikum WEB 1
+## HTML
 Apa itu HTML?
 - HTML adalah singkatan dari Hyper Text Markup Language
 - HTML adalah bahasa markup standar untuk membuat halaman Web
