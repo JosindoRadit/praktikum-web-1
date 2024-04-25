@@ -1,4 +1,4 @@
-![i1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/44f642f1-a2ea-424c-8e64-983a342920fb)![image](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/2ecb206a-db25-4842-a420-61c66e3a56d7)## Praktikum WEB 1
+## Praktikum WEB 1
 ## HTML
 
 ## 1.html interduction
