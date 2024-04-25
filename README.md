@@ -1,4 +1,4 @@
-## Praktikum WEB 1
+![image](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/b4c1f92d-3015-4426-98e3-e27540cfb663)## Praktikum WEB 1
 ## HTML
 
 ## 1.html interduction
@@ -2501,44 +2501,557 @@ table, th, td {
 ![tr1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/b2c9b97f-9ae0-4a95-8853-2a71c0d56b2d)
 
 
+Tabel HTML - Rentang Baris
+
+
+Untuk membuat sel menjangkau beberapa baris, gunakan rowspanatribut:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Cell that spans two rows</h2>
+<p>To make a cell span more than one row, use the rowspan attribute.</p>
+
+<table style="width:80%">
+  <tr>
+    <th>Name</th>
+    <td>Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+  </tr>
+</table>
+</body>
+</html>
+
+```
+
+
+![tr2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/e762454a-482e-42a8-9611-7f9aac92fd21)
+
+
+## Table Styeling
+
+
+Tabel HTML - Garis Zebra
+
+
+
+Jika Anda menambahkan warna latar belakang pada setiap baris tabel lainnya, Anda akan mendapatkan efek garis zebra yang bagus.
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th, td {
+  text-align: left;
+  padding: 11px;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+</style>
+</head>
+<body>
+
+<h2>Zebra Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+<table>
+  <tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+  </tr>
+  <tr>
+  <td>Peter</td>
+  <td>Griffin</td>
+  <td>$100</td>
+  </tr>
+  <tr>
+  <td>Lois</td>
+  <td>Griffin</td>
+  <td>$150</td>
+  </tr>
+  <tr>
+  <td>Joe</td>
+  <td>Swanson</td>
+  <td>$300</td>
+  </tr>
+  <tr>
+  <td>Cleveland</td>
+  <td>Brown</td>
+  <td>$250</td>
+  </tr>
+</table>
+
+</body>
+</html>
+```
+
+
+
+![ts1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/255e1b15-555b-4738-8f19-121383fd7684)
+
+
+
+Tabel HTML - Garis Zebra Vertikal
+
+
+
+Untuk membuat garis zebra vertikal, beri gaya pada setiap kolom lainnya , bukan setiap baris lainnya .
+
+
+``<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: #D6EEEE;
+}
+</style>
+</head>
+<body>
+
+<h2>Striped Table</h2>
+
+
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+
+
+```
+<table style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td>ce </td>
+    <td>fe </td>
+    <td>gr </td>
+    <td>yj </td>
+    <td>ry </td>
+    <td>sf </td>
+    <td>af </td>
+  </tr>
+  <tr>
+    <td>ef </td>
+    <td>aa </td>
+    <td>cs </td>
+    <td>ge </td>
+    <td>ku </td>
+    <td>rt </td>
+    <td>jr </td>
+  </tr>
+  <tr>
+    <td>er </td>
+    <td>fw </td>
+    <td>ve </td>
+    <td>he </td>
+    <td>jt </td>
+    <td>li </td>
+    <td>yn </td>
+  </tr>
+  <tr>
+    <td>eh </td>
+    <td>09 </td>
+    <td>jt </td>
+    <td>ah </td>
+    <td>5h </td>
+    <td>hr </td>
+    <td>jt </td>
+  </tr>
+</table>
+
+</body>
+</html>
 
 
 
 
 
+```
+
+
+![ts2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/e8bbb84e-656a-4089-87f3-f467b537a1f4)
+
+
+
+Gabungkan Garis Zebra Vertikal dan Horisontal
+
+
+
+Anda dapat menggabungkan gaya dari dua contoh di atas dan Anda akan memiliki garis-garis di setiap baris dan kolom lainnya.
+Jika Anda menggunakan warna transparan, Anda akan mendapatkan efek yang tumpang tindih.
+Gunakan rgba()warna untuk menentukan transparansi warna:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+</style>
+</head>
+<body>
+
+<h2>Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+<table style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td>erg </td>
+    <td>wf </td>
+    <td>heh </td>
+    <td>hte </td>
+    <td>wfwe </td>
+    <td> wg</td>
+    <td>hwrh </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>wrg53 </td>
+    <td>wgvd </td>
+    <td>wg </td>
+    <td>gwegwg </td>
+    <td> fwfv</td>
+    <td>geg </td>
+    <td>gweg </td>
+  </tr>
+  <tr>
+    <td>gweg </td>
+    <td> gw</td>
+    <td>wg </td>
+    <td> vwe</td>
+    <td>fwef </td>
+    <td>fwe </td>
+    <td>ew </td>
+  </tr>
+</table>
+
+</body>
+</html>
+```
+
+
+![ts3](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/bc623a73-a923-41dd-b868-5f611d20db55)
+
+
+
+Tabel Melayang
 
 
 
 
+Gunakan :hoverpemilih truntuk menyorot baris tabel dengan mengarahkan mouse:
+
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 3px solid #DDD;
+}
+
+tr:hover {background-color: #D6EEEE;}
+</style>
+</head>
+<body>
+
+<h2>Hoverable Table</h2>
+<p>Move the mouse over the table rows to see the effect.</p>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+</body>
+</html>
+```
+
+
+![ts5](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/1d6d2ba2-c8ed-4cde-8980-364522280ff6)
 
 
 
 
+## 11. HTML List
+
+Daftar HTML memungkinkan pengembang web mengelompokkan sekumpulan item terkait dalam daftar.
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>An Unordered HTML List</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+<h2>An Ordered HTML List</h2>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+</body>
+</html>
+
+```
+
+
+![l1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/2ed68ab1-2d05-4999-910a-5f6178555fa3)
+
+
+Daftar HTML Tidak Berurutan
+
+
+Daftar tidak berurutan dimulai dengan <ul>tag. Setiap item daftar dimulai dengan <li>tag.
+Item daftar akan ditandai dengan poin (lingkaran hitam kecil) secara default:
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>An unordered HTML list</h2>
+
+<ul>
+  <li>cengkeh</li>
+  <li>rambutan</li>
+  <li>ikan</li>
+</ul>  
+
+</body>
+</html>
+
+
+```
+
+
+![l2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/29ef7cbc-2fe3-440a-ad68-ac83dbb02759)
+
+
+Daftar HTML yang dipesan
 
 
 
+Daftar yang diurutkan dimulai dengan <ol>tag. Setiap item daftar dimulai dengan <li>tag.
+Item daftar akan ditandai dengan angka secara default:
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>An ordered HTML list</h2>
+
+<ol>
+  <li>barca</li>
+  <li>madrid</li>
+  <li>liverpool</li>
+</ol>  
+
+</body>
+</html>
+
+
+```
+
+
+![l3](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/b4522906-434a-4645-b4de-a34c41640650)
 
 
 
+Daftar Deskripsi HTML
 
 
+HTML juga mendukung daftar deskripsi.
+Daftar deskripsi adalah daftar istilah, dengan deskripsi setiap istilah.
+Tag <dl>mendefinisikan daftar deskripsi, <dt>tag mendefinisikan istilah (nama), dan <dd> tag menjelaskan setiap istilah:
 
 
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>A Description List</h2>
+
+<dl>
+  <dt>makanan</dt>
+  <dd>roti cana</dd>
+  <dt>minuman</dt>
+  <dd>florida</dd>
+</dl>
+
+</body>
+</html>
+```
 
 
+![l4](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/803cab83-49b9-4247-a174-1ce4e6e163dc)
 
 
+## List Tidak Berurutan
+
+Daftar HTML Tidak Berurutan
 
 
+Daftar tidak berurutan dimulai dengan <ul>tag. Setiap item daftar dimulai dengan <li>tag.
+Item daftar akan ditandai dengan poin (lingkaran hitam kecil) secara default:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>An unordered HTML list</h2>
+
+<ul>
+  <li>ehe</li>
+  <li>gpoergj</li>
+  <li>ojngoreg</li>
+</ul>  
+
+</body>
+</html>
+```
 
 
+![lu1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/ee9b1dec-0b38-4b19-94f6-6de12d8a9546)
 
 
+Daftar HTML Tidak Berurutan - Pilih Penanda Item Daftar
+Properti CSS list-style-typedigunakan untuk menentukan gaya penanda item daftar. Itu dapat memiliki salah satu dari nilai berikut:
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Unordered List without Bullets</h2>
+
+<ul style="list-style-type:none;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+</body>
+</html>
 
 
+```
 
 
-
+![lu2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/9f0aa3f5-2b52-4d95-a97e-b49771923653)
 
 
 
