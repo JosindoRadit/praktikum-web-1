@@ -1,4 +1,4 @@
-![image](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/b4c1f92d-3015-4426-98e3-e27540cfb663)## Praktikum WEB 1
+## Praktikum WEB 1
 ## HTML
 
 ## 1.html interduction
@@ -3055,26 +3055,275 @@ Properti CSS list-style-typedigunakan untuk menentukan gaya penanda item daftar.
 
 
 
+Daftar HTML Bersarang
+
+
+Daftar dapat disarangkan (daftar di dalam daftar):
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>A Nested List</h2>
+<p>Lists can be nested (list inside list):</p>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ol>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ol>
+  </li>
+  <li>Milk</li>
+</ul>
+
+</body>
+</html>
+
+
+```
+
+
+![lu3](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/730c7574-c5ae-4327-92b8-68a33ecfb770)
 
 
 
+Daftar Horisontal dengan CSS
+
+
+Daftar HTML dapat ditata dengan berbagai cara dengan CSS.
+Salah satu cara yang populer adalah menata daftar secara horizontal, untuk membuat menu navigasi:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<h2>Navigation Menu</h2>
+<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+```
+
+
+![lu4](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/fcca07ac-fad1-4c73-af67-352f83744100)
+
+
+## List Order
+
+Ordered HTML List
+
+
+An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+The list items will be marked with numbers by default:
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>An ordered HTML list</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+</body>
+</html>
+
+
+```
+
+
+![lo1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/29efe534-0632-4b04-addd-0c86824d05ae)
+
+
+Ordered HTML List - The Type Attribute
 
 
 
+The type attribute of the <ol> tag, defines the type of the list item marker:
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Ordered List with Lowercase Roman Numbers</h2>
+
+<ol type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>  
+
+</body>
+</html>
+
+```
+
+![lo2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/fedfb3e2-2951-4754-8ea6-c4b594029338)
+
+
+Control List Counting
+
+
+By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the start attribute:
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The start attribute</h2>
+<p>By default, an ordered list will start counting from 1. Use the start attribute to start counting from a specified number:</p>
+
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol type="I" start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+</body>
+</html>
+
+```
+
+
+![lo3](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/cbe75074-b4ce-4377-a938-d782e617f745)
 
 
 
+Nested HTML Lists
 
 
+Lists can be nested (list inside list):
 
 
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>A Nested List</h2>
+<p>Lists can be nested (list inside list):</p>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea
+    <ol>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ol>
+  </li>
+  <li>Milk</li>
+</ol>
+
+</body>
+</html>
+
+```
 
 
+![lo4](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/f8cf284f-0b3a-486d-9971-79d100a7454e)
 
 
+Ringkasan Bab
 
 
+- Gunakan elemen HTML <ol>untuk menentukan daftar yang diurutkan
+- Gunakan atribut HTML typeuntuk menentukan tipe penomoran
+- Gunakan elemen HTML <li>untuk mendefinisikan item daftar
+- Daftar dapat disarangkan
+- Item daftar dapat berisi elemen HTML lainnya
 
+
+## List Lainya
+
+
+Daftar Deskripsi HTML
+
+
+Daftar deskripsi adalah daftar istilah, dengan deskripsi setiap istilah.
+Tag <dl>mendefinisikan daftar deskripsi, tag mendefinisikan istilah (nama), dan tag menjelaskan setiap istilah: <dt> <dd>
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>njajal</h2>
+
+<dl>
+  <dt>Copy</dt>
+  <dd>- mumet</dd>
+  <dt>susu</dt>
+  <dd>- jos</dd>
+</dl>
+
+</body>
+</html>
+
+
+```
+
+![oll1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/3203ee00-23ca-4852-b1d7-20d05dbec47a)
+
+
+Ringkasan Bab
+Gunakan elemen HTML <dl>untuk menentukan daftar deskripsi
+Gunakan elemen HTML <dt>untuk menentukan istilah deskripsi
+Gunakan elemen HTML <dd>untuk mendeskripsikan istilah dalam daftar deskripsi
 
 
 
