@@ -1443,6 +1443,1101 @@ Untuk menggunakan gambar sebagai tautan, letakkan <img>tag di dalam <a> tag:
 ![i5](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/06be24e4-515c-4190-9a36-1a6eb8dcb330)
 
 
+## image Map
+
+
+
+
+Peta Gambar
+
+
+
+Tag HTML <map>mendefinisikan peta gambar. Peta gambar adalah gambar dengan area yang dapat diklik. Area ditentukan dengan satu atau lebih <area>tag.
+Coba klik pada komputer, ponsel, atau secangkir kopi pada gambar di bawah ini:
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Image Maps</h2>
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+</body>
+</html>
+```
+
+
+![pg1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/779cef80-8e41-4846-937c-e137481c9f1f)
+
+
+Bagaimana cara kerjanya?
+
+
+Ide dibalik peta gambar adalah Anda dapat melakukan tindakan yang berbeda-beda tergantung pada bagian gambar yang Anda klik.
+Untuk membuat peta gambar, Anda memerlukan gambar, dan beberapa kode HTML yang menjelaskan area yang dapat diklik.
+
+
+
+Foto
+
+
+Gambar disisipkan menggunakan <img>tag. Satu-satunya perbedaan dari gambar lain adalah Anda harus menambahkan usemapatribut:
+
+
+Buat Peta Gambar
+
+
+Lalu, tambahkan <map>elemen.
+Elemen ini <map>digunakan untuk membuat peta gambar, dan ditautkan ke gambar menggunakan name atribut yang diperlukan:
+
+
+Area
+
+
+Kemudian, tambahkan area yang dapat diklik.
+Area yang dapat diklik ditentukan menggunakan <area>elemen.
+Membentuk
+Anda harus menentukan bentuk area yang dapat diklik, dan Anda dapat memilih salah satu dari nilai berikut:
+rect- mendefinisikan wilayah persegi panjang
+circle- mendefinisikan wilayah melingkar
+poly- mendefinisikan wilayah poligonal
+default- mendefinisikan seluruh wilayah
+Anda juga harus menentukan beberapa koordinat untuk dapat menempatkan area yang dapat diklik pada gambar.
+
+
+Bentuk = "lurus"
+
+
+Koordinatnya shape="rect"berpasangan, satu untuk sumbu x dan satu lagi untuk sumbu y.
+Jadi koordinatnya 34,44terletak 34 piksel dari margin kiri dan 44 piksel dari atas:
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Image Maps</h2>
+<p>Click on the computer to go to a new page and read more about the topic:</p>
+
+<img src="https://th.bing.com/th/id/OIP.pDYQs58XUffTuIfJ562dxQHaEL?w=381&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+</map>
+
+</body>
+</html>
+
+
+```
+
+![pg2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/6809a296-93d9-40da-b01b-e31fdffbda25)
+
+
+
+
+Bentuk = "lingkaran"
+
+
+Untuk menambah luas lingkaran, cari dulu koordinat pusat lingkarannya:
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Image Maps</h2>
+<p>Click on the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="https://th.bing.com/th/id/OIP.DNmNmQ3pfktiJlqLFBvdQAHaE7?w=262&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+</body>
+</html>
+
+```
+
+
+
+![pg3](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/80e33445-2b7a-48e5-8adc-f65487d4f011)
+
+
+Bentuk = "poli"
+
+
+
+Berisi shape="poly"beberapa titik koordinat, yang menghasilkan bentuk yang dibentuk dengan garis lurus (poligon).
+Ini dapat digunakan untuk membuat bentuk apa pun.
+Mungkin seperti bentuk croissant!
+Bagaimana kita membuat croissant pada gambar di bawah ini menjadi link yang dapat diklik?
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Image Maps</h2>
+<p>Click on the croissant to go to a new page and read more about the topic:</p>
+
+<img src="https://th.bing.com/th/id/OIP.NA_gDxM_in8-N2hOhfc_UwHaG6?w=175&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="French Food" usemap="#foodmap" width="450" height="405">
+
+<map name="foodmap">
+  <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" alt="Croissant" href="croissant.htm">
+</map>
+
+</body>
+</html>
+
+```
+
+
+![pg4](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/718d5f5e-90cb-42a4-a4aa-618ebf7511d5)
+
+
+
+
+Ringkasan Bab
+
+
+- Gunakan elemen HTML <map>untuk mendefinisikan peta gambar
+- Gunakan elemen HTML <area>untuk menentukan area yang dapat diklik di peta gambar
+- Gunakan atribut HTML usemapelemen <img>untuk menunjuk ke peta gambar
+
+
+
+
+## Bacground Images
+
+
+Gambar Latar Belakang pada elemen HTML
+
+
+Untuk menambahkan gambar latar belakang pada elemen HTML, gunakan styleatribut HTML dan properti CSS background-image:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  background-image: url('img_girl.jpg');
+}
+</style>
+</head>
+<body>
+
+<h2>Background Image</h2>
+
+<p>You can specify background images<br>
+for any visible HTML element.<br>
+In this example, the background image<br>
+is specified for a div element.<br>
+By default, the background-image<br>
+will repeat itself in the direction(s)<br>
+where it is smaller than the element<br>
+where it is specified. (Try resizing the<br>
+browser window to see how the<br>
+background image behaves.</p>
+
+</body>
+</html>
+
+```
+
+
+
+![BI](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/640f4a37-bde0-4b25-b48d-0d359591a7c9)
+
+
+
+Gambar Latar Belakang pada Halaman
+
+
+
+Jika Anda ingin seluruh halaman memiliki gambar latar belakang, Anda harus menentukan gambar latar belakang pada <body>elemen:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('https://th.bing.com/th?id=OIF.PQQh%2b0P6ML8ci%2f4DmvHjvg&w=280&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+}
+</style>
+</head>
+<body>
+
+<h2>Background Image</h2>
+
+<p>By default, the background image will repeat itself if it is smaller than the element where it is specified, in this case the body element.</p>
+
+</body>
+</html>
+```
+
+
+![B2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/83c1db39-973a-4e38-b92d-bcfe2c533196)
+
+
+Sampul Latar Belakang
+
+
+Jika Anda ingin gambar latar belakang menutupi seluruh elemen, Anda dapat mengatur propertinya background-sizemenjadi cover.
+Selain itu, untuk memastikan seluruh elemen selalu tertutup, atur propertinya background-attachmentmenjadifixed:
+Dengan cara ini, gambar latar belakang akan menutupi seluruh elemen, tanpa peregangan (gambar akan mempertahankan proporsi aslinya):
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('https://th.bing.com/th/id/OIP.lu8CcUAS_UiIOr5v_TeePwHaEo?w=289&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  
+}
+body {
+	font-color: white;
+    }
+</style>
+</head>
+<body>
+
+<h2>Background Cover</h2>
+
+<p>Set the background-size property to "cover" and the background image will cover the entire element, in this case the body element.</p>
+
+</body>
+</html>
+
+```
+
+
+
+
+![B2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/8732a266-a380-4080-87a1-2a8829663b27)
+
+
+
+
+Peregangan Latar Belakang
+
+
+Jika Anda ingin gambar latar belakang diregangkan agar sesuai dengan seluruh elemen, Anda dapat mengatur propertinya background-sizemenjadi 100% 100%:
+
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('https://th.bing.com/th/id/OIP.XvZsnumh7kDRdObxJJWuwgHaDm?w=345&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
+
+<h2>Background Stretch</h2>
+
+<p>Set the background-size property to "100% 100%" and the background image will be stretched to cover the entire element, in this case the body element.</p>
+
+</body>
+</html>
+
+
+```
+
+
+![B4](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/9c2f3f53-0ba2-42d4-8c20-1061e5b53738)
+
+
+## 10. HTML Table
+
+
+Tentukan Tabel HTML
+
+
+Tabel dalam HTML terdiri dari sel-sel tabel di dalam baris dan kolom.
+
+
+```
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>A basic HTML table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+<p>To understand the example better, we have added borders to the table.</p>
+
+</body>
+</html>
+```
+
+
+![t1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/0a7d458f-b6ef-463e-8040-a629243290ab)
+
+
+
+Sel Tabel
+
+
+Setiap sel tabel ditentukan oleh a <td>dan </td>tag.
+td singkatan dari data tabel.
+Segala sesuatu di antara <td>dan </td>merupakan konten sel tabel.
+
+
+```
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>TD elements define table cells</h2>
+
+<table style="width:100%">
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+</table>
+
+<p>To understand the example better, we have added borders to the table.</p>
+
+</body>
+</html>
+
+```
+
+
+![t2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/8dd584aa-5dcf-43e8-a730-ac3db62cb266)
+
+
+Baris Tabel
+
+
+
+Setiap baris tabel dimulai dengan a <tr>dan diakhiri dengan </tr>tag.
+tr singkatan dari baris tabel.
+
+
+```
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>tabel kematian</h2>
+
+<table style="width:100%">
+  <tr>
+    <td>naga</td>
+    <td>dinosaurus</td>
+    <td>amoeba</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>154</td>
+    <td>1065</td>
+  </tr>
+</table>
+
+<p>To understand the example better, we have added borders to the table.</p>
+
+</body>
+</html>
+
+
+```
+
+
+
+![t3](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/37a5ff7a-4ba1-4d02-ba6a-61fddde78c0d)
+
+
+
+Header Tabel
+
+
+Terkadang Anda ingin sel Anda menjadi sel header tabel. Dalam kasus tersebut, gunakan <th>tag alih-alih <td>tag:
+th singkatan dari header tabel.
+
+
+```
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>TH elements define table headers</h2>
+
+<table style="width:80%">
+  <tr>
+    <th>anis</th>
+    <th>prabowo</th>
+    <th>ganjar</th>
+  </tr>
+  <tr>
+    <td>imin</td>
+    <td>gibran</td>
+    <td>mahfud</td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>72</td>
+    <td>45</td>
+  </tr>
+</table>
+
+<p>To understand the example better, we have added borders to the table.</p>
+
+</body>
+</html>
+
+
+```
+
+
+![t4](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/ce5cc3f1-fb05-4722-99f7-4798bc71c89c)
+
+
+
+
+## Batas Table
+
+
+Cara Menambahkan Perbatasan
+
+
+Untuk menambahkan batas, gunakan borderproperti CSS pada table, th, dan tdelemen:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h2>Table With Border</h2>
+
+<p>Use the CSS border property to add a border to the table.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>nama</th>
+    <th>panggilan</th> 
+    <th>umur</th>
+  </tr>
+  <tr>
+    <td>juli</td>
+    <td>agustus</td>
+    <td>79</td>
+  </tr>
+  <tr>
+    <td>maret</td>
+    <td>april</td>
+    <td>90</td>
+  </tr>
+  <tr>
+    <td>octo</td>
+    <td>doel</td>
+    <td>887</td>
+  </tr>
+</table>
+
+</body>
+</html>
+```
+
+
+![t5](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/e0b720f4-0127-4f34-8755-b5f0aeba78f3)
+
+
+
+Batas Tabel Runtuh
+
+
+Untuk menghindari batas ganda seperti pada contoh di atas, atur border-collapse properti CSS menjadi collapse.
+Hal ini akan membuat perbatasan tersebut runtuh menjadi satu perbatasan:
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Collapsed Borders</h2>
+<p>If you want the borders to collapse into one border, add the CSS border-collapse property.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+```
+
+
+
+![t6](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/d768382f-3ef7-4bf2-bc3d-b407ec6bdca4)
+
+
+Perbatasan Meja Bundar
+
+
+Dengan border-radiusproperti, perbatasannya mendapat sudut membulat:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2>Table With Rounded Borders</h2>
+
+<p>Use the CSS border-radius property to add rounded corners to the table cells.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+```
+
+
+![t7](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/43741644-6d5c-499b-a56c-fb6833850f66)
+
+
+Batas Tabel Bertitik
+
+
+Dengan border-styleproperti tersebut, Anda dapat mengatur tampilan border.
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+th, td {
+  border-style: dotted;
+}
+</style>
+</head>
+<body>
+
+<h2>Table With Dotted Borders</h2>
+
+<p>Use the CSS border-style property to set the style of the borders.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>nama</th>
+    <th>panggilan</th> 
+    <th>usia</th>
+  </tr>
+  <tr>
+    <td>alfa</td>
+    <td>alpin</td>
+    <td>34</td>
+  </tr>
+  <tr>
+    <td>dimas</td>
+    <td>hendra</td>
+    <td>35</td>
+  </tr>
+  <tr>
+    <td>kenan</td>
+    <td>apin</td>
+    <td>23</td>
+  </tr>
+</table>
+
+</body>
+</html>
+```
+
+![t8](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/9a8b27f1-1207-4d22-9a99-95b684645efa)
+
+
+
+## Table Zize
+
+HTML Table Width
+
+
+To set the width of a table, add the style attribute to the <table> element:
+
+
+```
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:5px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+<body>
+
+<h2>100% wide HTML Table</h2>
+
+<table style="width: 60%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+```
+
+
+![tz1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/e8874695-4d8f-426e-be1e-0bace093bca0)
+
+
+
+HTML Table Column Width
+
+
+To set the size of a specific column, add the style attribute on a <th> or <td> element:
+
+
+
+```
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:2px solid black;
+  border-collapse: collapse;
+}
+</style>
+<body>
+
+<h2>Set the first column to 70% of the table width</h2>
+
+<table style="width:10%">
+  <tr>
+    <th style="width:90%">Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+```
+
+
+![tz2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/2979c71c-82a7-4e31-9f87-ef272f11a987)
+
+
+HTML Table Row Height
+
+
+To set the height of a specific row, add the style attribute on a table row element:
+
+
+```
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:2px dotted black;
+  border-collapse: collapse;
+}
+</style>
+<body>
+
+<h2>Set the height of the second row to 200 pixels</h2>
+
+<table style="width:80%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr style="height:140px">
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+```
+
+![tz3](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/b46c3b4a-b2fb-4f18-8c2c-8386b7911d9b)
+
+
+
+## table pedding&spasi
+
+Tabel HTML - Bantalan Sel
+
+
+Cell padding adalah jarak antara tepi sel dan isi sel.
+Secara default padding diatur ke 0.
+Untuk menambahkan padding pada sel tabel, gunakan properti CSS padding:
+
+
+```
+<h2>Cellpadding - top - bottom - left - right </h2>
+<p>We can specify different padding for all fours sides of the cell content.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>ahmad</td>
+    <td>kurcai</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>nurulll</td>
+    <td>adi</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>riko</td>
+    <td>rido</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+```
+
+
+
+![tp1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/0104692c-5ff8-45e3-86dc-0312aae92556)
+
+
+Tabel HTML - Spasi Sel
+
+
+Jarak sel adalah jarak antar sel.
+Secara default, spasi diatur ke 2 piksel.
+Untuk mengubah spasi antar sel tabel, gunakan border-spacingproperti CSS pada table elemen:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+table {
+  border-spacing: 30px;
+}
+</style>
+</head>
+<body>
+
+<h2>Cellspacing</h2>
+<p>Change the space between the cells with the border-spacing property.</p>
+
+<table style="width:90%">
+  <tr>
+    <th>nama</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>arya</td>
+    <td>dimas</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>revano</td>
+    <td>arfilal</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>jamal</td>
+    <td>nyong</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+```
+
+
+![tp2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/04767808-29fc-4848-911c-d94343b6fe84)
+
+
+## table colwspen rowspend
+
+
+Tabel HTML - Colspan
+Untuk membuat sel menjangkau beberapa kolom, gunakan colspanatribut:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Cell that spans two columns</h2>
+<p>To make a cell span more than one column, use the colspan attribute.</p>
+
+<table style="width:60%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>57</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+```
+
+
+
+![tr1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/b2c9b97f-9ae0-4a95-8853-2a71c0d56b2d)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
