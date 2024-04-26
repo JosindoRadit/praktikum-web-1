@@ -5028,6 +5028,222 @@ th {
 
 
 
+## JavaScript
+
+
+## 1. JS Interduction
+
+
+JavaScript Dapat Mengubah Konten HTML
+
+
+Salah satu dari banyak metode JavaScript HTML adalah getElementById().
+Contoh di bawah ini "menemukan" elemen HTML (dengan id="demo"), dan mengubah konten elemen (innerHTML) menjadi "Halo JavaScript":
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+</body>
+</html>
+
+```
+
+
+![ji1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/d73ae39c-cb48-4e03-8592-40b557c95330)
+
+
+
+## 2. JS Syntx
+
+
+Nilai JavaScript
+
+
+Sintaks JavaScript mendefinisikan dua jenis nilai:
+- Nilai tetap
+- Nilai variabel
+Nilai tetap disebut Literals .
+Nilai variabel disebut Variabel .
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Number can be written with or without decimals.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 10.50;
+</script>
+
+</body>
+</html>
+
+```
+
+
+![jss](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/334e849b-54f8-4e31-a203-296a733c45be)
+
+
+
+## 3. JS Fungction
+
+
+Sintaks Fungsi JavaScript
+
+
+Fungsi JavaScript didefinisikan dengan functionkata kunci, diikuti dengan nama , diikuti dengan tanda kurung () .
+Nama fungsi dapat berisi huruf, angka, garis bawah, dan tanda dolar (aturannya sama seperti variabel).
+Tanda kurung dapat menyertakan nama parameter yang dipisahkan dengan koma:
+( parameter1, parameter2, ... )
+Kode yang akan dieksekusi, berdasarkan fungsi, ditempatkan di dalam tanda kurung kurawal: {}
+
+
+
+Pemanggilan Fungsi]
+
+
+Kode di dalam fungsi akan dijalankan ketika "sesuatu" memanggil (memanggil) fungsi tersebut:
+- Saat suatu peristiwa terjadi (saat pengguna mengklik tombol)
+- Ketika dipanggil (dipanggil) dari kode JavaScript
+- Secara otomatis (dipanggil sendiri)
+Anda akan belajar lebih banyak tentang pemanggilan fungsi nanti di tutorial ini.
+IKLAN
+
+
+Fungsi Kembali
+
+
+
+Ketika JavaScript mencapai sebuah returnpernyataan, fungsi tersebut akan berhenti dijalankan.
+Jika fungsi dipanggil dari sebuah pernyataan, JavaScript akan "kembali" untuk mengeksekusi kode setelah pernyataan yang dipanggil.
+Fungsi sering kali menghitung nilai kembalian . Nilai yang dikembalikan "dikembalikan" ke "penelepon":
+
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x;
+
+function myFunction(a, b) {
+  return a * b;
+}
+</script>
+
+</body>
+</html>
+
+```
+
+![jf](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/780874ac-fb1a-4663-9a58-02119c4c070b)
+
+
+
+## 4. JS Strings
+
+
+Menggunakan Kutipan
+
+
+String JavaScript adalah nol atau lebih karakter yang ditulis di dalam tanda kutip.
+
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+
+<p id="demo"></p>
+
+<script>
+let text = "John Doe";  // String written inside quotes
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+```
+
+
+![jsss](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/8a93ce8e-71ef-4c07-81f4-5dbd6c83f1d4)
+
+
+## 5. JS Array
+
+
+Mengapa Menggunakan Array?
+
+
+Jika Anda memiliki daftar item (misalnya daftar nama mobil), menyimpan mobil dalam variabel tunggal akan terlihat seperti ini:
+Namun, bagaimana jika Anda ingin menelusuri mobil-mobil tersebut dan menemukan mobil tertentu? Dan bagaimana jika Anda tidak punya 3 mobil, tapi 300?
+Solusinya adalah sebuah array!
+Sebuah array dapat menampung banyak nilai dalam satu nama, dan Anda dapat mengakses nilai tersebut dengan mengacu pada nomor indeks.
+
+
+Membuat Array
+
+
+Menggunakan literal array adalah cara termudah untuk membuat Array JavaScript.
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+</body>
+</html>
+
+```
+
+
+![ja](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/b3b7d4f6-46b5-4a26-9023-c9b092686393)
+
+
+
+
+
+
+
+
+
 
 
 
