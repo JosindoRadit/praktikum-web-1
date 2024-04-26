@@ -4897,14 +4897,18 @@ p {
 ![fz](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/37962d41-458c-4e6b-bc9e-ecc49fdb57ec)
 
 
+
 ## 8. CSS Table
+
 
 
 ## Table Borders
 
 
+
 To specify table borders in CSS, use the border property.
 The example below specifies a solid border for <table>, <th>, and <td> elements:
+
 
 
 ```
@@ -4942,17 +4946,22 @@ table, th, td {
 ```
 
 
+
 ![tb](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/2b5172f4-01a3-4c26-9d7a-d4b0135ac784)
+
 
 
 ## Table Zize
 
 
+
 Lebar dan Tinggi Meja
+
 
 
 Lebar dan tinggi tabel ditentukan oleh properti widthdan height.
 Contoh di bawah menyetel lebar tabel menjadi 100%, dan tinggi elemen <th> menjadi 70 piksel:
+
 
 
 ```
@@ -5011,10 +5020,8 @@ th {
 </body>
 </html>
 
-
-
-
 ```
+
 
 
 ![tz](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/57b391fc-554b-4433-ada8-1af4b0fc5cc3)
