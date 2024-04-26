@@ -4424,6 +4424,238 @@ p.large {
 
 
 
+## 4. CSS Color
+
+
+CSS Color Names
+
+
+In CSS, a color can be specified by using a predefined color name:
+
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:Tomato;">Tomato</h1>
+<h1 style="background-color:Orange;">Orange</h1>
+<h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+<h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+<h1 style="background-color:Gray;">Gray</h1>
+<h1 style="background-color:SlateBlue;">SlateBlue</h1>
+<h1 style="background-color:Violet;">Violet</h1>
+<h1 style="background-color:LightGray;">LightGray</h1>
+
+</body>
+</html>
+
+```
+
+
+![co1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/8f6ff3c4-36a6-433f-8072-3711a869f3f7)
+
+
+## Color RGB
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Specify colors using RGB values</h1>
+
+<h2 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h2>
+<h2 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h2>
+<h2 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h2>
+<h2 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h2>
+<h2 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h2>
+<h2 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h2>
+
+</body>
+</html>
+
+```
+
+
+![co2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/58929204-26ca-45b9-8d1b-0750516e223a)
+
+
+
+## Color HEX
+
+HEX Value
+
+
+In CSS, a color can be specified using a hexadecimal value in the form:
+#rrggbb
+Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).
+To display black, set all values to 00, like this: #000000.
+splay white, set all values to ff, like this: #ffffff.  
+Experiment by mixing the HEX values below:
+
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Specify colors using HEX values</h1>
+
+<h2 style="background-color:#ff0000;">#ff0000</h2>
+<h2 style="background-color:#0000ff;">#0000ff</h2>
+<h2 style="background-color:#3cb371;">#3cb371</h2>
+<h2 style="background-color:#ee82ee;">#ee82ee</h2>
+<h2 style="background-color:#ffa500;">#ffa500</h2>
+<h2 style="background-color:#6a5acd;">#6a5acd</h2>
+
+</body>
+</html>
+
+
+
+```
+
+
+![co3](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/da4dd7e9-8a6b-44fc-97cb-3980b6ad7f33)
+
+
+
+## 5. CSS Backgraund
+
+
+## Backgraund Color
+
+
+Warna latar belakang CSS
+Properti background-colormenentukan warna latar belakang suatu elemen.
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h1>M World</h1>
+
+<p>this is aleterego</p>
+
+</body>
+</html>
+
+
+
+```
+
+
+
+![b1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/929e9bb9-c236-40c6-91fc-ab517bd02e43)
+
+
+
+
+## Backggraund gambar
+
+Gambar latar belakang CSS
+Properti background-imagemenentukan gambar untuk digunakan sebagai latar belakang suatu elemen.
+
+Secara default, gambar diulang sehingga menutupi keseluruhan elemen.
+
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url("https://th.bing.com/th?id=OLC.ovP5KSr2ckkViQ480x360&w=138&h=110&c=7&rs=1&qlt=80&o=6&cdv=1&dpr=1.3&pid=Local");
+}
+</style>
+</head>
+<body>
+
+<h1>Hello World!</h1>
+
+<p>This page has an image as the background!</p>
+
+</body>
+</html>
+
+
+
+```
+
+
+
+
+![BG1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/768572fb-9bf6-4a5a-b341-19f9ff5d9b55)
+
+
+
+## 6. CSS Margin
+
+
+Margin CSS
+
+
+Properti CSS margindigunakan untuk menciptakan ruang di sekitar elemen, di luar batas yang ditentukan.
+Dengan CSS, Anda memiliki kendali penuh atas margin. Terdapat properti untuk mengatur margin untuk setiap sisi elemen (atas, kanan, bawah, dan kiri).
+
+Margin - Sisi Individu
+CSS memiliki properti untuk menentukan margin untuk setiap sisi elemen:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+Semua properti margin dapat memiliki nilai berikut:
+
+otomatis - browser menghitung margin
+length - menentukan margin dalam px, pt, cm, dll.
+% - menentukan margin dalam % lebar elemen yang memuatnya
+mewarisi - menentukan bahwa margin harus diwarisi dari elemen induk
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-right: 90px;
+  margin-left: 60px;
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<h2>Using individual margin properties</h2>
+
+<div>This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+
+</body>
+</html>
+
+
+```
+
+
+![m1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/ad682836-4fe1-48d8-bc55-27e5e1d6dd91)
 
 
 
@@ -4433,7 +4665,359 @@ p.large {
 
 
 
+## Margin collapse
 
+
+Keruntuhan Margin
+
+
+Margin atas dan bawah elemen terkadang diciutkan menjadi satu margin yang sama dengan margin terbesar dari kedua margin tersebut.
+Hal ini tidak terjadi pada margin kiri dan kanan! Hanya margin atas dan bawah!
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  margin: 0 0 70px 0;
+}
+
+h2 {
+  margin: 40px 0 0 0;
+}
+</style>
+</head>
+<body>
+
+<p>In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. So, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px.</p>
+
+<h1>Seleko 1</h1>
+<h2>Bonsayur2</h2>
+
+</body>
+</html>
+
+```
+
+
+![m2](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/e30c2de2-fb58-4914-8958-02166e6eaccc)
+
+
+## 6. Box model
+
+Model Kotak CSS
+
+
+Dalam CSS, istilah "model kotak" digunakan ketika berbicara tentang desain dan tata letak.
+Model kotak CSS pada dasarnya adalah sebuah kotak yang membungkus setiap elemen HTML. Terdiri dari: konten, padding, batas dan margin.
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid brown;
+  padding: 50px;
+  margin: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Demonstrating the Box Model</h2>
+
+<p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+
+<div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+</body>
+</html>
+
+
+
+```
+
+
+
+![b11`](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/f1636ca3-3b63-422b-8d34-6f3e5b5e4b9b)
+
+
+## 7. CSS text
+
+CSS memiliki banyak properti untuk memformat teks.
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid green;
+  padding: 8px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: #008CBA;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <h1>text formatting</h1>
+  <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
+  The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
+  <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>
+</div>
+
+</body>
+</html>
+
+
+
+```
+
+
+![tx1](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/30497824-af0e-4d05-b622-22239f417b9b)
+
+
+## 8. CSS Font
+
+
+## Font Style
+
+
+Gaya tulisan
+
+
+Properti ini font-stylesebagian besar digunakan untuk menentukan teks miring.
+Properti ini memiliki tiga nilai:
+normal - Teks ditampilkan secara normal
+miring - Teks ditampilkan dalam huruf miring
+miring - Teksnya "condong" (miring sangat mirip dengan miring, tetapi kurang didukung)
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.normal {
+  font-variant: normal;
+}
+
+p.small {
+  font-variant: small-caps;
+}
+</style>
+</head>
+<body>
+
+<h1>The font-variant property</h1>
+
+<p class="normal">My name is Hege Refsnes.</p>
+<p class="small">My name is Hege Refsnes.</p>
+
+</body>
+</html>
+
+```
+
+
+## Font Zize
+
+
+Ukuran huruf
+
+
+Properti font-sizemengatur ukuran teks.
+Mampu mengatur ukuran teks penting dalam desain web. Namun, Anda sebaiknya tidak menggunakan penyesuaian ukuran font untuk membuat paragraf terlihat seperti judul, atau judul terlihat seperti paragraf.
+Selalu gunakan tag HTML yang tepat, seperti <h1> - <h6> untuk judul dan <p> untuk paragraf.
+Nilai ukuran font dapat berupa ukuran absolut atau relatif.
+Ukuran absolut:
+Mengatur teks ke ukuran tertentu
+Tidak mengizinkan pengguna mengubah ukuran teks di semua browser (buruk karena alasan aksesibilitas)
+Ukuran absolut berguna ketika ukuran fisik keluaran diketahui
+Ukuran relatif:
+Menetapkan ukuran relatif terhadap elemen di sekitarnya
+Memungkinkan pengguna mengubah ukuran teks di browser
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
+
+```
+
+
+
+![fz](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/37962d41-458c-4e6b-bc9e-ecc49fdb57ec)
+
+
+## 8. CSS Table
+
+
+## Table Borders
+
+
+To specify table borders in CSS, use the border property.
+The example below specifies a solid border for <table>, <th>, and <td> elements:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid;
+}
+</style>
+</head>
+<body>
+
+<h2>Add a border to a table:</h2>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+```
+
+
+![tb](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/2b5172f4-01a3-4c26-9d7a-d4b0135ac784)
+
+
+## Table Zize
+
+
+Lebar dan Tinggi Meja
+
+
+Lebar dan tinggi tabel ditentukan oleh properti widthdan height.
+Contoh di bawah menyetel lebar tabel menjadi 100%, dan tinggi elemen <th> menjadi 70 piksel:
+
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  height: 70px;
+}
+</style>
+</head>
+<body>
+
+<h2>The width and height Properties</h2>
+
+<p>Set the width of the table, and the height of the table header row:</p>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+
+
+```
+
+
+![tz](https://github.com/JosindoRadit/praktikum-web-1/assets/168063657/57b391fc-554b-4433-ada8-1af4b0fc5cc3)
 
 
 
